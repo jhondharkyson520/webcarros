@@ -32,7 +32,7 @@ function AuthProvider({ children }: AuthProviderProps){
 
         const unsub = onAuthStateChanged(auth, (user) => {
             if(user){
-                //tem user logado
+                
                 setUser({
                     uid: user.uid,
                     name: user?.displayName,
@@ -40,7 +40,7 @@ function AuthProvider({ children }: AuthProviderProps){
                 })
                 setLoadingAuth(false);
             }else{
-                //não tem user logado
+                
                 setUser(null);
                 setLoadingAuth(false);
             }

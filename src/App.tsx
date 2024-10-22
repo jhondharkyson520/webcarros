@@ -27,16 +27,16 @@ const router = createBrowserRouter([
       {
         path: '/dashboard/new',
         element: <Private> <New/> </Private>
+      },
+      {
+        path: '/login',
+        element: <Login/>
+      },
+      {
+        path: '/register',
+        element: <Register/>
       }
     ]
-  },
-  {
-    path: '/login',
-    element: <Login/>
-  },
-  {
-    path: '/register',
-    element: <Register/>
   }
 ])
 
