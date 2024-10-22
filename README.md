@@ -2,7 +2,7 @@
 
 ## 📝 Descrição
 
-Este projeto é uma aplicação web inspirada no Webmotors, focada no gerenciamento e exibição de veículos. A plataforma permite que os usuários façam o cadastro de carros, enviem imagens e visualizem os detalhes de cada veículo através de um dashboard dinâmico e interativo. Usuários podem se registrar, fazer login e, após autenticados, cadastrar novos carros ou gerenciar seus veículos.
+O **Web Carros** é uma aplicação web inspirada na Webmotors, projetada para permitir o cadastro, visualização e gerenciamento de carros. A aplicação oferece uma interface amigável para que usuários possam se cadastrar, fazer login e gerenciar anúncios de veículos. Apenas usuários autenticados podem cadastrar e gerenciar carros. Além disso, a aplicação conta com um **dashboard** que exibe as informações detalhadas dos veículos cadastrados, com a possibilidade de visualizar fotos e descrições completas de cada carro.
 
 ## 🚀 Funcionalidades
 
@@ -17,10 +17,10 @@ Este projeto é uma aplicação web inspirada no Webmotors, focada no gerenciame
 ## 🛠️ Tecnologias Utilizadas
 
 - **Frontend**:
-  - ⚛️ ReactJS
-  - 🟦 TypeScript
-  - 🎨 TailwindCSS
-  - 🔥 Firebase
+  - ⚛️ **ReactJS**: Biblioteca JavaScript para construção de interfaces de usuário.
+  - 🟦 **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+  - 🎨 **TailwindCSS**: Framework de CSS utilitário para um design rápido e customizável.
+  - 🔥 **Firebase**: Utilizado para autenticação de usuários junto a Firestore para o banco de dados.
 
 ## 🗂️ Estrutura do Projeto
 
