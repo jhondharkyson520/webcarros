@@ -68,3 +68,34 @@ O **Web Carros** é uma aplicação web inspirada na Webmotors, projetada para p
    ```bash
    npm run dev
    ```
+
+## 🔧 Configuração do Firebase
+
+Para executar o projeto localmente, você precisa configurar o Firebase para a autenticação e o banco de dados.
+
+1. **Acesse o Firebase Console**:
+   - Entre no [Firebase Console](https://console.firebase.google.com/) e crie um novo projeto (ou use um já existente).
+
+2. **Configurações do Projeto**:
+   - No Firebase Console, vá até **Configurações do Projeto** e selecione **Configurações Gerais**. 
+   - No painel de configuração, adicione um novo app para web e copie as credenciais de configuração fornecidas pelo Firebase (estas incluem `apiKey`, `authDomain`, `projectId`, etc.).
+
+3. **Arquivo `.env`**:
+   - Na raiz do seu projeto, crie um arquivo `.env` e adicione as seguintes variáveis com os valores copiados do Firebase:
+
+     ```plaintext
+     VITE_apiKey=your-api-key
+     VITE_authDomain=your-auth-domain
+     VITE_projectId=your-project-id
+     VITE_storageBucket=your-storage-bucket
+     VITE_messagingSenderId=your-messaging-sender-id
+     VITE_appId=your-app-id
+     ```
+
+4. **Habilitar Autenticação**:
+   - No Firebase Console, vá até a seção **Authentication** e habilite o método de autenticação desejado (ex: Email/Password).
+
+5. **Configuração do Firestore**:
+   - Ainda no Firebase Console, acesse **Firestore Database** e configure um banco de dados no modo de teste para facilitar o desenvolvimento local.
+
+Após essas configurações, o Firebase estará pronto para uso no ambiente local.

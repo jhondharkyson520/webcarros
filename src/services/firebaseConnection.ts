@@ -5,12 +5,12 @@ import { getStorage } from 'firebase/storage'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCDp50sIweP06KZrMBMOcOseyiepcGw6Ok",
-  authDomain: "webcarros-eb47b.firebaseapp.com",
-  projectId: "webcarros-eb47b",
-  storageBucket: "webcarros-eb47b.appspot.com",
-  messagingSenderId: "976745192119",
-  appId: "1:976745192119:web:24d992ba2c28e2f66fcb32"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 
