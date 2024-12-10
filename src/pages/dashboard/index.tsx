@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { Container } from "../../components/container"
 import { DashboardHeader } from "../../components/panelheader"
 import { FiTrash2 } from 'react-icons/fi'
-import { collection, orderBy, getDocs, where, query, doc, deleteDoc } from "firebase/firestore";
+import { collection, getDocs, where, query, doc, deleteDoc } from "firebase/firestore";
 import { db, storage } from "../../services/firebaseConnection";
 import { AuthContext } from "../../context/AuthContext";
 import { ref, deleteObject } from "firebase/storage";
