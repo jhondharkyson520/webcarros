@@ -37,13 +37,13 @@ export function Login() {
     function onSubmit(data: FormData){
         signInWithEmailAndPassword(auth, data.email, data.password).then((user) => {
             console.log('Logado com sucesso');
-            console.log(user); 
+            //console.log(user); 
             toast.success("Logado com sucesso!");                      
             navigate('/dashboard', {replace: true});
             
         }).catch(err => {
             console.log('Erro ao logar');
-            console.log(err);
+            //console.log(err);
             toast.error("Erro ao fazer o login!")           
             
         })
