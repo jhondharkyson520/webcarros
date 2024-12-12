@@ -35,13 +35,13 @@ export function Login() {
   }, [])
 
     function onSubmit(data: FormData){
-        signInWithEmailAndPassword(auth, data.email, data.password).then((user) => {
+        signInWithEmailAndPassword(auth, data.email, data.password).then(() => {
             console.log('Logado com sucesso');
             //console.log(user); 
             toast.success("Logado com sucesso!");                      
             navigate('/dashboard', {replace: true});
             
-        }).catch(err => {
+        }).catch(() => {
             console.log('Erro ao logar');
             //console.log(err);
             toast.error("Erro ao fazer o login!")           
